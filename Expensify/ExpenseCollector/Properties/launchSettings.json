@@ -1,0 +1,10 @@
+﻿{
+  "profiles": {
+    "CloudEagle.ExpenseCollector": {
+      "commandName": "Project",
+      "environmentVariables": {
+        "DOTNET_ENVIRONMENT": "Development"
+      }
+    }
+  }
+}

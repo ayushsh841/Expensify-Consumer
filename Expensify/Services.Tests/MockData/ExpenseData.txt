@@ -1,0 +1,12 @@
+﻿[
+ {
+     "Merchant": "Merchant 1",
+     "Amount": 150.00,
+     "Currency": "INR"
+ },
+ {
+     "Merchant": "Merchant 2",
+     "Amount": 10.00,
+     "Currency": "INR"
+ }
+]

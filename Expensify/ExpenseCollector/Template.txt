@@ -1,0 +1,21 @@
+﻿template=<#if addHeader == true>
+  [   
+</#if>
+<#list reports as report>
+    <#list report.transactionList as expense>
+    {
+        "Merchant": ${expense.merchant},<#t>
+        "Amount": ${expense.amount},<#t>
+        "ConvertedAmount": ${expense.convertedAmount},<#t>
+        "Currency": "${expense.currency}",<#t>
+        "ConversionRate": ${expense.currencyConversionRate},<#t>
+        "ModifiedAmount": ${expense.modifiedAmount},<#t>
+        "TaxAmount": ${expense.taxAmount},<#t>
+        "Category": "${expense.category}",<#t>
+        "Type": "${expense.type}"<#t>
+    } 
+    </#list>
+</#list>
+<#if addFooter>
+    <#lt> ]
+</#if>
